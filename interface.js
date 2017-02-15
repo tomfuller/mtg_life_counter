@@ -3,11 +3,14 @@ $(document).ready(function()
   var player1 = new Player();
   var player2 = new Player();
 
+  updateAll();
 
-  updatePlayer1Life();
-  updatePlayer2Life();
-  updatePlayer1Energy();
-  updatePlayer2Energy();
+  function updateAll() {
+    updatePlayer1Life();
+    updatePlayer2Life();
+    updatePlayer1Energy();
+    updatePlayer2Energy();
+  }
 
   function updatePlayer1Life() {
     $('#player1-life').text("Life: " + player1.playerLife);
@@ -64,5 +67,11 @@ $(document).ready(function()
     player2.increaseEnergyBy1();
     updatePlayer2Energy();
   });
+
+  $('#reset').on('click', function() {
+    player1.resetGame();
+    player2.resetGame();
+    updateAll();
+  })
 
 })
