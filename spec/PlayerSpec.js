@@ -19,6 +19,4 @@ describe("Player", function() {
     player.increaseLifeBy1();
     expect(player.playerLife).toEqual(21);
   });
-
-
 });
