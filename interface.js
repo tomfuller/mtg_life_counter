@@ -6,33 +6,63 @@ $(document).ready(function()
 
   updatePlayer1Life();
   updatePlayer2Life();
+  updatePlayer1Energy();
+  updatePlayer2Energy();
 
   function updatePlayer1Life() {
-    $('#player1-life').text(player1.playerLife)
+    $('#player1-life').text("Life: " + player1.playerLife);
+  }
+
+  function updatePlayer1Energy() {
+    $('#player1-energy').text("Energy: " + player1.energyCount);
   }
 
   function updatePlayer2Life() {
-    $('#player2-life').text(player2.playerLife)
+    $('#player2-life').text("Life: " + player2.playerLife);
   }
 
-  $('#p1down').on('click', function() {
+  function updatePlayer2Energy() {
+    $('#player2-energy').text("Energy: " + player2.energyCount);
+  }
+
+  $('#p1-life-down').on('click', function() {
     player1.decreaseLifeBy1();
     updatePlayer1Life()
   });
 
-  $('#p1up').on('click', function() {
+  $('#p1-life-up').on('click', function() {
     player1.increaseLifeBy1();
     updatePlayer1Life()
   });
 
-  $('#p2down').on('click', function() {
+  $('#p1-energy-down').on('click',function() {
+    player1.decreaseEnergyBy1();
+    updatePlayer1Energy();
+  });
+
+  $('#p1-energy-up').on('click', function() {
+    player1.increaseEnergyBy1();
+    updatePlayer1Energy();
+  });
+
+  $('#p2-life-down').on('click', function() {
     player2.decreaseLifeBy1();
     updatePlayer2Life()
   });
 
-  $('#p2up').on('click', function() {
+  $('#p2-life-up').on('click', function() {
     player2.increaseLifeBy1();
     updatePlayer2Life()
+  });
+
+  $('#p2-energy-down').on('click',function() {
+    player2.decreaseEnergyBy1();
+    updatePlayer2Energy();
+  });
+
+  $('#p2-energy-up').on('click', function() {
+    player2.increaseEnergyBy1();
+    updatePlayer2Energy();
   });
 
 })
