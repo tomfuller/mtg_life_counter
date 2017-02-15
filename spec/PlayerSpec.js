@@ -39,4 +39,10 @@ describe("Player", function() {
     expect( function(){player.decreaseEnergyBy1(); }).toThrowError('Energy is already 0');
     expect(player.energyCount).toEqual(0);
   })
+
+  it('should be able to reset to default values', function() {
+    player.resetGame();
+    expect(player.playerLife).toEqual(20)
+    expect(player.energyCount).toEqual(0)
+  });
 });

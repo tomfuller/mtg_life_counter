@@ -23,3 +23,8 @@ Player.prototype.decreaseEnergyBy1 = function() {
 Player.prototype.increaseEnergyBy1 = function() {
   this.energyCount += 1;
 };
+
+Player.prototype.resetGame = function() {
+  this.playerLife = 20;
+  this.energyCount = 0;
+};
