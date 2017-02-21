@@ -1,13 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html, body
+{
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+h1
+{
   font-size: 45px;
 }
 
-h2 {
+h2
+{
   font-size: 25px;
 }
 
@@ -27,6 +30,8 @@ h2 {
   color: rgb(24, 177, 163);
 }
 
+.player1col { width: 20%; }
+.player2col { width: 20%; }
 
 .player1col,.player2col
 {
@@ -40,10 +45,38 @@ h2 {
   color: rgb(24, 177, 163);
 }
 
+#p1-life-up,#p1-energy-up,#p2-life-up,#p2-energy-up
+{
+  width: 15%;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url('./images/arrow.png') no-repeat center top;
+  background-size: 100% 100%;
+  text-indent: -1000em;
+  cursor: pointer;
+}
+
+#p1-life-down,#p1-energy-down,#p2-life-down,#p2-energy-down
+{
+  width: 15%;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url('./images/arrow.png') no-repeat center top;
+  background-size: 100% 100%;
+  text-indent: -1000em;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .reset
 {
   text-align: center;
 }
-
-.player1col { width: 20%; }
-.player2col { width: 20%; }
