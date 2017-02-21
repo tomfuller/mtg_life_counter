@@ -5,3 +5,20 @@
 	margin-bottom: 1em;
   text-align: center;
 }
+
+.player1col,.player2col
+{
+	float: left;
+	background-color: #ccc;
+	margin-bottom: 1em;
+	/*margin-left: 3%;*/
+  text-align: center;
+}
+
+.reset
+{
+  text-align: center;
+}
+
+.player1col { width: 50%; }
+.player2col { width: 50%; }
