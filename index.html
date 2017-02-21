@@ -5,34 +5,41 @@
     MTG LIFE COUNTER
   </title>
   <link rel="stylesheet" href="style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class="header">
-    <h1>MTG Life Counter</h1>
+  <div class="background">
+    <div class="header">
+      <h1>MTG Life Counter</h1>
+    </div>
+
+    <div class="player1col">
+      <h2>Player 1</h2>
+      <h2 id='player1-life'></h2>
+      <button id='p1-life-down'>down</button>
+      <button id='p1-life-up'>up</button>
+      <h2 id='player1-energy'></h2>
+      <button id='p1-energy-down'>down</button>
+      <button id='p1-energy-up'>up</button>
+    </div>
+
+    <div class="player2col">
+      <h2>Player 2</h2>
+      <h2 id='player2-life'></h2>
+      <button id='p2-life-down'>down</button>
+      <button id='p2-life-up'>up</button>
+      <h2 id='player2-energy'></h2>
+      <button id='p2-energy-down'>down</button>
+      <button id='p2-energy-up'>up</button>
+    </div>
+
+    <br>
+    <br>
+    <div class="reset">
+      <button id='reset'>Reset</button>
+    </div>
   </div>
-  
-  <h2>Player 1</h2>
-  <h2 id='player1-life'></h2>
-  <button id='p1-life-down'>down</button>
-  <button id='p1-life-up'>up</button>
-  <h2 id='player1-energy'></h2>
-  <button id='p1-energy-down'>down</button>
-  <button id='p1-energy-up'>up</button>
-
-  <h2>Player 2</h2>
-  <h2 id='player2-life'></h2>
-  <button id='p2-life-down'>down</button>
-  <button id='p2-life-up'>up</button>
-  <h2 id='player2-energy'></h2>
-  <button id='p2-energy-down'>down</button>
-  <button id='p2-energy-up'>up</button>
-
-  <br>
-  <br>
-  <button id='reset'>Reset</button>
-
 
   <script src="jquery-3.1.1.js"></script>
   <script src="src/Player.js"></script>
