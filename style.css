@@ -1,18 +1,28 @@
+.background
+{
+  background-image: url('./images/Jace.jpg');
+  background-size: cover;
+}
+
 .header
 {
-	background-color: #ccc;
-	padding: 1em 2em;
-	margin-bottom: 1em;
+  background-color: rgba(119, 119, 119, 0.7);
+  padding: 1em 2em;
+  margin-bottom: 1em;
   text-align: center;
+  color: rgb(24, 215, 118);
 }
 
 .player1col,.player2col
 {
-	float: left;
-	background-color: #ccc;
-	margin-bottom: 1em;
-	/*margin-left: 3%;*/
+  float: left;
+  background-color: rgba(119, 119, 119, 0.7);
+  margin-bottom: 1em;
+  margin-left: 15%;
+  margin-right: 15%;
   text-align: center;
+  border-radius: 1em;
+  color: rgb(24, 215, 118);
 }
 
 .reset
@@ -20,5 +30,5 @@
   text-align: center;
 }
 
-.player1col { width: 50%; }
-.player2col { width: 50%; }
+.player1col { width: 20%; }
+.player2col { width: 20%; }
