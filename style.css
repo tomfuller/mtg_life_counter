@@ -3,6 +3,14 @@ html, body {
     padding: 0;
 }
 
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
 .background
 {
   background-image: url('./images/Jace.jpg');
@@ -18,6 +26,7 @@ html, body {
   text-align: center;
   color: rgb(24, 215, 118);
 }
+
 
 .player1col,.player2col
 {
