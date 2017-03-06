@@ -69,6 +69,7 @@ h2
   background-size: 100% 100%;
   text-indent: -1000em;
   cursor: pointer;
+  overflow: hidden;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
